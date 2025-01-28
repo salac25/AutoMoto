@@ -1,0 +1,114 @@
+/* General styles */
+:root{
+    --primary-color: #344955;
+    --secondary-color:#50727B;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+header{
+    
+    background-color:var(--primary-color);
+    position: sticky !important;
+    top: 0;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  .navbar-brand{
+    cursor:default;
+  }
+  .navbar-collapse{
+    flex-grow:0;
+  }
+
+  @media (min-width: 768px) {
+    .navbar-expand-md .navbar-collapse {
+        display: inline-flex !important
+;
+    }
+}
+.headings{
+    color: var(--primary-color);
+}
+.hero {
+    background: url('assets/automoto.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 100px 20px;
+    object-fit: cover;
+    object-position:center;
+background-repeat: no-repeat;
+}
+.hero .container{
+        /* background-color: #78A083; */
+        padding: 2rem;
+        width: fit-content;
+        border: 1px solid white;
+        border-radius: 1rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        
+        backdrop-filter: blur(3px);
+    
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.btn-explore{
+    
+    background: var(--secondary-color);
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.btn-explore:hover{
+    border: 1px solid white;
+    background: var(--primary-color);
+   
+}
+
+.features .card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 450px;
+}
+
+.card-img-top{
+  height: 300px;
+object-fit:cover;
+
+}
+
+footer {
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .features .card {
+        margin-bottom: 20px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        margin-bottom: 10px;
+    }
+}
